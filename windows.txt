@@ -1,0 +1,87 @@
+mitre_defensive_mapping = {
+    "T1055": [  # Process Injection
+        "Enable Arbitrary Code Guard (ACG) to prevent code injection.",
+        "Enable Code Integrity Guard to block unsigned DLLs.",
+        "Use Data Execution Prevention (DEP) to prevent execution of injected code.",
+        "Enable Validate Stack Integrity (StackPivot) to detect stack manipulation."
+    ],
+    "T1203": [  # Exploitation for Client Execution
+        "Enable Export Address Filtering (EAF) to prevent function resolution attacks.",
+        "Enable Import Address Filtering (IAF) to block API resolution attacks.",
+        "Use Mandatory ASLR to randomize memory locations.",
+        "Enable Simulate Execution (SimExec) to detect ROP-based exploits."
+    ],
+    "T1218": [  # Signed Binary Proxy Execution
+        "Use Attack Surface Reduction (ASR) rules to block execution of suspicious binaries.",
+        "Enable Code Integrity Guard to prevent unsigned DLL loading.",
+        "Disable Win32k system calls for processes that do not require them."
+    ],
+    "T1134": [  # Access Token Manipulation
+        "Enable Validate Handle Usage to prevent unauthorized token access.",
+        "Use Credential Guard to protect sensitive authentication tokens."
+    ],
+    "T1548": [  # Abuse Elevation Control Mechanism
+        "Enable User Account Control (UAC) enforcement.",
+        "Use Attack Surface Reduction (ASR) rules to block elevation of unsigned binaries."
+    ],
+    "T1562": [  # Impair Defenses
+        "Enable Tamper Protection in Microsoft Defender.",
+        "Use Windows Defender Application Control (WDAC) to prevent unauthorized modifications."
+    ],
+    "T1059": [  # Command and Scripting Interpreter
+        "Enable Attack Surface Reduction (ASR) rules to block script execution.",
+        "Use AppLocker or WDAC to restrict execution of unauthorized scripts."
+    ],
+    "T1027": [  # Obfuscated Files or Information
+        "Enable Antimalware Scan Interface (AMSI) to detect script obfuscation.",
+        "Use Attack Surface Reduction (ASR) rules to block encoded PowerShell commands."
+    ],
+    "T1036": [  # Masquerading
+        "Enable Code Integrity Guard to prevent execution of renamed system binaries.",
+        "Use Attack Surface Reduction (ASR) rules to block execution of suspicious processes."
+    ],
+    "T1070": [  # Indicator Removal on Host
+        "Enable Windows Event Logging and ensure log retention policies are enforced.",
+        "Use Security-Mitigations Event IDs to monitor exploit protection events."
+    ],
+    "T1083": [  # File and Directory Discovery
+        "Use Attack Surface Reduction (ASR) rules to block unauthorized file enumeration.",
+        "Enable Controlled Folder Access to prevent unauthorized access to sensitive directories."
+    ],
+    "T1105": [  # Ingress Tool Transfer
+        "Enable SmartScreen to block malicious downloads.",
+        "Use Attack Surface Reduction (ASR) rules to block execution of downloaded content."
+    ],
+    "T1112": [  # Modify Registry
+        "Enable Attack Surface Reduction (ASR) rules to block unauthorized registry modifications.",
+        "Use Windows Defender Application Control (WDAC) to prevent execution of unauthorized registry-modifying tools."
+    ],
+    "T1486": [  # Data Encrypted for Impact (Ransomware)
+        "Enable Controlled Folder Access to prevent unauthorized encryption.",
+        "Use Attack Surface Reduction (ASR) rules to block ransomware-like behavior."
+    ],
+    "T1497": [  # Virtualization/Sandbox Evasion
+        "Enable Antimalware Scan Interface (AMSI) to detect sandbox evasion techniques.",
+        "Use Attack Surface Reduction (ASR) rules to block execution of known evasion techniques."
+    ],
+    "T1560": [  # Archive Collected Data
+        "Use Attack Surface Reduction (ASR) rules to block execution of unauthorized archiving tools.",
+        "Enable Controlled Folder Access to prevent unauthorized access to sensitive files."
+    ],
+    "T1574": [  # Hijack Execution Flow
+        "Enable Code Integrity Guard to prevent DLL hijacking.",
+        "Use Attack Surface Reduction (ASR) rules to block execution of hijacked binaries."
+    ],
+    "T1056": [  # Input Capture (Keylogging)
+        "Enable Windows Defender Exploit Protection to block keylogging techniques.",
+        "Use Attack Surface Reduction (ASR) rules to block unauthorized input capture."
+    ],
+    "T1071": [  # Application Layer Protocol
+        "Enable Network Protection to block malicious outbound connections.",
+        "Use Attack Surface Reduction (ASR) rules to block execution of unauthorized network tools."
+    ],
+    "T1567": [  # Exfiltration Over Web Service
+        "Enable Network Protection to block unauthorized data exfiltration.",
+        "Use Attack Surface Reduction (ASR) rules to block execution of unauthorized web upload tools."
+    ]
+}
