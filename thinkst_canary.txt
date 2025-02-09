@@ -116,3 +116,66 @@ mitre_defensive_requirements = {
         "Use Google Drive Tokens to detect unauthorized file modifications."
     ]
 }
+
+mitre_defensive_mapping = {
+    "T1078 - Valid Accounts": [
+        "Deploy Canaries mimicking critical systems to detect unauthorized access attempts.",
+        "Use Canarytokens in sensitive credentials to detect unauthorized use."
+    ],
+    "T1003 - OS Credential Dumping": [
+        "Deploy Canaries configured as domain controllers or authentication servers to detect credential dumping attempts.",
+        "Use Canarytokens in password vaults or credential stores to detect unauthorized access."
+    ],
+    "T1021 - Remote Services": [
+        "Deploy Canaries with exposed SSH, RDP, or SMB services to detect unauthorized remote access attempts.",
+        "Monitor Canary alerts for unexpected remote login attempts."
+    ],
+    "T1133 - External Remote Services": [
+        "Deploy Canaries in cloud environments (AWS, Azure, GCP) to detect unauthorized access to externally exposed services.",
+        "Use Canarytokens in VPN or cloud service credentials to detect unauthorized use."
+    ],
+    "T1566 - Phishing": [
+        "Embed Canarytokens in email attachments or links to detect phishing attempts.",
+        "Monitor for triggered Canarytokens in documents or credentials shared via email."
+    ],
+    "T1041 - Exfiltration Over C2 Channel": [
+        "Deploy Canaries with fake sensitive data to detect exfiltration attempts.",
+        "Use Canarytokens in files to detect unauthorized data access and exfiltration."
+    ],
+    "T1071 - Application Layer Protocol": [
+        "Deploy Canaries with fake services (e.g., HTTP, FTP, DNS) to detect unauthorized communication attempts.",
+        "Monitor Canary alerts for unexpected protocol usage."
+    ],
+    "T1102 - Web Service": [
+        "Use Canarytokens in API keys or cloud service credentials to detect unauthorized API access.",
+        "Deploy Canaries mimicking web services to detect unauthorized interactions."
+    ],
+    "T1485 - Data Destruction": [
+        "Deploy Canaries with fake critical files to detect unauthorized deletion attempts.",
+        "Use Canarytokens in backup files to detect tampering."
+    ],
+    "T1496 - Resource Hijacking": [
+        "Deploy Canaries mimicking compute resources to detect unauthorized usage.",
+        "Monitor Canary alerts for unexpected resource access."
+    ],
+    "T1203 - Exploitation for Client Execution": [
+        "Deploy Canaries with vulnerable-looking services to detect exploitation attempts.",
+        "Use Canarytokens in software installers or scripts to detect unauthorized execution."
+    ],
+    "T1210 - Exploitation of Remote Services": [
+        "Deploy Canaries with exposed services (e.g., RDP, SMB, SSH) to detect exploitation attempts.",
+        "Monitor Canary alerts for unexpected service interactions."
+    ],
+    "T1036 - Masquerading": [
+        "Deploy Canaries mimicking legitimate services to detect adversaries attempting to blend in.",
+        "Use Canarytokens in system binaries or scripts to detect unauthorized execution."
+    ],
+    "T1557 - Man-in-the-Middle": [
+        "Deploy Canaries with fake network devices to detect adversary-in-the-middle attacks.",
+        "Monitor Canary alerts for unexpected network traffic interception."
+    ],
+    "T1070 - Indicator Removal on Host": [
+        "Use Canarytokens in log files or security configurations to detect tampering.",
+        "Deploy Canaries with fake security logs to detect adversary attempts to cover tracks."
+    ]
+}
