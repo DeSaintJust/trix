@@ -1,0 +1,97 @@
+mitre_cyberark_mapping = {
+    "T1078": [  # Valid Accounts
+        "Use Privileged Identity Management (PIM) to enforce least privilege access.",
+        "Monitor account usage with Privileged Threat Analytics (PTA) to detect anomalies.",
+        "Enforce password rotation policies using Enterprise Password Vault (EPV)."
+    ],
+    "T1555": [  # Credentials from Password Stores
+        "Store privileged credentials securely in Enterprise Password Vault (EPV).",
+        "Monitor access to credential stores using Privileged Threat Analytics (PTA).",
+        "Enforce strong authentication for vault access with Password Vault Web Access (PVWA)."
+    ],
+    "T1021": [  # Remote Services
+        "Use Privileged Session Manager (PSM) to control and monitor remote access.",
+        "Enforce session recording and auditing with PSM.",
+        "Restrict direct RDP/SSH access using On-Demand Privileges Manager (OPM)."
+    ],
+    "T1053": [  # Scheduled Task/Job
+        "Monitor scheduled task execution with Privileged Threat Analytics (PTA).",
+        "Restrict privileged task creation using On-Demand Privileges Manager (OPM).",
+        "Enforce least privilege policies with CyberArk Viewfinity."
+    ],
+    "T1071": [  # Application Layer Protocol
+        "Monitor and log privileged session traffic using Privileged Session Manager (PSM).",
+        "Enforce encrypted communication protocols with CyberArk Vault security policies.",
+        "Integrate with SIEM for real-time monitoring of suspicious protocol usage."
+    ],
+    "T1136": [  # Create Account
+        "Monitor privileged account creation with Privileged Threat Analytics (PTA).",
+        "Enforce just-in-time access provisioning with On-Demand Privileges Manager (OPM).",
+        "Restrict unauthorized account creation using Enterprise Password Vault (EPV)."
+    ],
+    "T1484": [  # Domain Policy Modification
+        "Monitor policy changes with Privileged Threat Analytics (PTA).",
+        "Enforce least privilege access to domain controllers using PSM.",
+        "Audit and log all privileged policy modifications with CyberArk Vault."
+    ],
+    "T1003": [  # OS Credential Dumping
+        "Prevent credential dumping by securing privileged accounts in Enterprise Password Vault (EPV).",
+        "Monitor suspicious credential access with Privileged Threat Analytics (PTA).",
+        "Restrict access to LSASS process using CyberArk Viewfinity."
+    ],
+    "T1059": [  # Command and Scripting Interpreter
+        "Monitor command execution in privileged sessions using Privileged Session Manager (PSM).",
+        "Restrict script execution with On-Demand Privileges Manager (OPM).",
+        "Audit and log all privileged command executions with CyberArk Vault."
+    ],
+    "T1070": [  # Indicator Removal on Host
+        "Enforce session recording with Privileged Session Manager (PSM).",
+        "Monitor log tampering attempts with Privileged Threat Analytics (PTA).",
+        "Integrate with SIEM for real-time log integrity monitoring."
+    ],
+    "T1548": [  # Abuse Elevation Control Mechanism
+        "Enforce least privilege access with On-Demand Privileges Manager (OPM).",
+        "Monitor privilege escalation attempts with Privileged Threat Analytics (PTA).",
+        "Restrict unauthorized privilege elevation using CyberArk Viewfinity."
+    ],
+    "T1562": [  # Impair Defenses
+        "Monitor security control modifications with Privileged Threat Analytics (PTA).",
+        "Restrict privileged access to security tools using Enterprise Password Vault (EPV).",
+        "Audit and log all security configuration changes with CyberArk Vault."
+    ],
+    "T1574": [  # Hijack Execution Flow
+        "Monitor process injection attempts with Privileged Threat Analytics (PTA).",
+        "Restrict unauthorized DLL and service modifications using CyberArk Viewfinity.",
+        "Audit and log all privileged execution flow changes with CyberArk Vault."
+    ],
+    "T1210": [  # Exploitation of Remote Services
+        "Monitor remote service access with Privileged Session Manager (PSM).",
+        "Restrict unauthorized remote service execution using On-Demand Privileges Manager (OPM).",
+        "Audit and log all privileged remote service interactions with CyberArk Vault."
+    ],
+    "T1036": [  # Masquerading
+        "Monitor process execution anomalies with Privileged Threat Analytics (PTA).",
+        "Restrict unauthorized application execution using CyberArk Viewfinity.",
+        "Audit and log all privileged application executions with CyberArk Vault."
+    ],
+    "T1105": [  # Ingress Tool Transfer
+        "Monitor file transfers in privileged sessions using Privileged Session Manager (PSM).",
+        "Restrict unauthorized file downloads using CyberArk Viewfinity.",
+        "Audit and log all privileged file transfers with CyberArk Vault."
+    ],
+    "T1566": [  # Phishing
+        "Monitor credential access attempts with Privileged Threat Analytics (PTA).",
+        "Enforce strong authentication for privileged accounts using Password Vault Web Access (PVWA).",
+        "Restrict unauthorized credential use with Enterprise Password Vault (EPV)."
+    ],
+    "T1204": [  # User Execution
+        "Monitor user-initiated privileged actions with Privileged Threat Analytics (PTA).",
+        "Restrict unauthorized script execution using CyberArk Viewfinity.",
+        "Audit and log all privileged user executions with CyberArk Vault."
+    ],
+    "T1072": [  # Software Deployment Tools
+        "Monitor software deployment activities with Privileged Threat Analytics (PTA).",
+        "Restrict unauthorized software installations using CyberArk Viewfinity.",
+        "Audit and log all privileged software deployments with CyberArk Vault."
+    ]
+}
