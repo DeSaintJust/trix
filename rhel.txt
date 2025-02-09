@@ -1,0 +1,122 @@
+mitre_attack_rhel_defenses = {
+    "T1003": [  # Credential Dumping
+        "Enable SELinux in enforcing mode to restrict unauthorized access to credential files.",
+        "Use PAM (Pluggable Authentication Modules) to enforce strong authentication policies.",
+        "Restrict access to `/etc/shadow` and other sensitive files using proper file permissions.",
+        "Monitor and audit access to `/proc/mem` and `/dev/kmem` using auditd."
+    ],
+    "T1059": [  # Command and Scripting Interpreter
+        "Disable unnecessary scripting interpreters (e.g., Python, Perl, Bash) for non-administrative users.",
+        "Use SELinux policies to restrict execution of scripts in unauthorized directories.",
+        "Enable auditing for shell execution using `auditd` rules.",
+        "Restrict execution of scripts from `/tmp` and other writable directories."
+    ],
+    "T1078": [  # Valid Accounts
+        "Enforce multi-factor authentication (MFA) for SSH and system logins.",
+        "Use `faillock` to limit failed login attempts and prevent brute-force attacks.",
+        "Regularly audit user accounts and remove inactive or unnecessary accounts.",
+        "Restrict SSH access using `AllowUsers` and `AllowGroups` in `/etc/ssh/sshd_config`."
+    ],
+    "T1105": [  # Ingress Tool Transfer
+        "Use SELinux to restrict execution of downloaded files.",
+        "Enable `firewalld` to block unauthorized inbound connections.",
+        "Monitor network traffic using `iptables` or `nftables`.",
+        "Use OpenSCAP to scan for unauthorized software installations."
+    ],
+    "T1027": [  # Obfuscated Files or Information
+        "Enable `auditd` to monitor execution of encoded or obfuscated scripts.",
+        "Use SELinux to restrict execution of unauthorized binaries.",
+        "Monitor file integrity using `AIDE` (Advanced Intrusion Detection Environment).",
+        "Restrict execution of scripts in `/tmp` and other writable directories."
+    ],
+    "T1055": [  # Process Injection
+        "Enable SELinux to prevent unauthorized process memory access.",
+        "Use `auditd` to monitor suspicious process creation events.",
+        "Restrict execution of `ptrace`-based debugging tools to privileged users.",
+        "Disable unnecessary kernel modules that allow process injection."
+    ],
+    "T1082": [  # System Information Discovery
+        "Restrict access to system information files such as `/proc/cpuinfo` and `/proc/meminfo`.",
+        "Use SELinux to limit access to system configuration files.",
+        "Monitor execution of system enumeration commands using `auditd`.",
+        "Disable unnecessary system services that expose system information."
+    ],
+    "T1046": [  # Network Service Scanning
+        "Use `firewalld` to restrict access to network services.",
+        "Monitor network scanning activity using `iptables` logging.",
+        "Restrict execution of network scanning tools using SELinux.",
+        "Use `auditd` to log execution of network scanning commands."
+    ],
+    "T1134": [  # Access Token Manipulation
+        "Use SELinux to prevent unauthorized privilege escalation.",
+        "Monitor process privilege changes using `auditd`.",
+        "Restrict access to `/proc` filesystem to prevent token theft.",
+        "Use PAM to enforce strict authentication and authorization policies."
+    ],
+    "T1203": [  # Exploitation for Client Execution
+        "Keep RHEL packages updated using `dnf` or `yum` to patch vulnerabilities.",
+        "Use SELinux to restrict execution of untrusted applications.",
+        "Enable `firewalld` to block unauthorized inbound connections.",
+        "Monitor system logs for signs of exploitation attempts."
+    ],
+    "T1218": [  # Signed Binary Proxy Execution
+        "Restrict execution of system binaries using SELinux policies.",
+        "Monitor execution of signed binaries using `auditd`.",
+        "Use `AIDE` to detect unauthorized modifications to system binaries.",
+        "Restrict execution of scripting interpreters embedded in signed binaries."
+    ],
+    "T1036": [  # Masquerading
+        "Use `auditd` to monitor execution of renamed system binaries.",
+        "Enable SELinux to prevent execution of unauthorized binaries.",
+        "Use `AIDE` to detect unauthorized modifications to system files.",
+        "Monitor process execution paths to detect anomalies."
+    ],
+    "T1071": [  # Application Layer Protocol
+        "Use `firewalld` to restrict outbound network connections.",
+        "Monitor network traffic using `iptables` or `nftables`.",
+        "Use SELinux to restrict unauthorized network communication.",
+        "Enable logging for suspicious network activity."
+    ],
+    "T1562": [  # Impair Defenses
+        "Restrict access to security logs using proper file permissions.",
+        "Monitor changes to security configurations using `auditd`.",
+        "Use SELinux to prevent unauthorized modification of security tools.",
+        "Enable `AIDE` to detect unauthorized changes to system files."
+    ],
+    "T1070": [  # Indicator Removal on Host
+        "Restrict access to log files using proper file permissions.",
+        "Use `auditd` to monitor deletion of security logs.",
+        "Enable SELinux to prevent unauthorized modification of log files.",
+        "Use centralized logging solutions to prevent local log tampering."
+    ],
+    "T1497": [  # Virtualization/Sandbox Evasion
+        "Restrict access to system information files that reveal virtualization details.",
+        "Use SELinux to prevent execution of unauthorized system enumeration tools.",
+        "Monitor execution of commands that detect virtualization environments.",
+        "Disable unnecessary system services that expose virtualization details."
+    ],
+    "T1548": [  # Abuse Elevation Control Mechanism
+        "Use `sudo` with least privilege principles to restrict privilege escalation.",
+        "Monitor `sudo` and `su` command usage using `auditd`.",
+        "Enable SELinux to prevent unauthorized privilege escalation.",
+        "Restrict execution of setuid binaries to authorized users."
+    ],
+    "T1053": [  # Scheduled Task/Job
+        "Restrict access to `cron` and `systemd` timers using proper permissions.",
+        "Monitor scheduled task creation using `auditd`.",
+        "Use SELinux to prevent unauthorized modification of scheduled tasks.",
+        "Disable unnecessary scheduled tasks and services."
+    ],
+    "T1021": [  # Remote Services
+        "Restrict SSH access using `AllowUsers` and `AllowGroups` in `/etc/ssh/sshd_config`.",
+        "Use SELinux to enforce strict access control on remote services.",
+        "Monitor remote login attempts using `auditd` and `faillock`.",
+        "Enable `firewalld` to restrict access to remote services."
+    ],
+    "T1560": [  # Archive Collected Data
+        "Monitor execution of archiving tools using `auditd`.",
+        "Use SELinux to restrict access to sensitive data directories.",
+        "Restrict execution of compression utilities to authorized users.",
+        "Monitor file transfers to detect unauthorized data exfiltration."
+    ]
+}
