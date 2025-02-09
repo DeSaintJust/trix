@@ -1,0 +1,36 @@
+mitre_to_asr_mapping = {
+    "T1059 - Command and Scripting Interpreter": [
+        "Block execution of potentially obfuscated scripts (GUID: D3E037E1-3EB8-44C8-A917-57927947596D)",
+        "Block JavaScript or VBScript from launching downloaded executable content (GUID: 5BEB7EFE-FD9A-4556-801D-275E5FFC04CC)"
+    ],
+    "T1204 - User Execution": [
+        "Block Office applications from creating child processes (GUID: D4F940AB-401B-4EFC-AADC-AD5F3C50688A)",
+        "Block executable content from email and webmail (GUID: BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550)"
+    ],
+    "T1566 - Phishing": [
+        "Block Office applications from injecting code into other processes (GUID: 75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84)",
+        "Block credential stealing from LSASS (GUID: 9E6ABFCD-E073-4B0B-8A5F-1CF1B0B1B327)"
+    ],
+    "T1218 - Signed Binary Proxy Execution": [
+        "Use advanced ASR rules to block abuse of signed binaries",
+        "Block process creations originating from PSExec and WMI commands (GUID: D1E49AAC-8F56-4280-B9BA-993A6D77406C)"
+    ],
+    "T1082 - System Information Discovery": [
+        "Block Office applications from creating child processes (GUID: D4F940AB-401B-4EFC-AADC-AD5F3C50688A)"
+    ],
+    "T1003 - Credential Dumping": [
+        "Block credential stealing from LSASS (GUID: 9E6ABFCD-E073-4B0B-8A5F-1CF1B0B1B327)"
+    ],
+    "T1055 - Process Injection": [
+        "Block Office applications from injecting code into other processes (GUID: 75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84)"
+    ],
+    "T1071 - Application Layer Protocol": [
+        "Block untrusted and unsigned processes that run from USB (GUID: B2B3F03D-6A65-4F7B-A9C7-1C7EF74A9BA4)"
+    ],
+    "T1112 - Modify Registry": [
+        "Block persistence through WMI event subscription (GUID: E6DB77E5-3DF2-4CF1-B95A-636979351E5B)"
+    ],
+    "T1547 - Boot or Logon Autostart Execution": [
+        "Block process creations originating from PSExec and WMI commands (GUID: D1E49AAC-8F56-4280-B9BA-993A6D77406C)"
+    ]
+}
