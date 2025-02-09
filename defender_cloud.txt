@@ -42,3 +42,96 @@ mitre_defender_mapping = {
         "Implement Just-In-Time (JIT) access control to minimize exposure of cloud resources."
     ]
 }
+
+mitre_defender_mapping = {
+    "T1548 - Abuse Elevation Control Mechanism": [
+        "Enable Defender for Identity to detect privilege escalation activities",
+        "Use Just Enough Administration (JEA) to limit administrative privileges",
+        "Implement Privileged Identity Management (PIM) in Microsoft Entra ID",
+        "Monitor Azure AD Privileged Role Assignments"
+    ],
+    "T1136 - Create Account": [
+        "Enable Conditional Access policies for account creation",
+        "Monitor identity creation logs via Defender for Cloud",
+        "Implement Microsoft Defender for Identity to detect unusual account activities",
+        "Enforce Multi-Factor Authentication (MFA) for account creation"
+    ],
+    "T1078 - Valid Accounts": [
+        "Enable audit logging for suspicious logins",
+        "Use Identity Protection in Entra ID to detect and respond to compromised accounts",
+        "Monitor account activity using Defender for Cloud alerts",
+        "Implement Conditional Access policies to restrict access based on risk levels"
+    ],
+    "T1021 - Remote Services": [
+        "Monitor Defender for Endpoint alerts on RDP and SSH connections",
+        "Enforce Just-in-Time (JIT) access to Virtual Machines",
+        "Use Microsoft Sentinel to monitor remote desktop session activity",
+        "Disable unnecessary remote access services"
+    ],
+    "T1555 - Credentials from Password Stores": [
+        "Enable Defender for Endpoint to monitor credential access attempts",
+        "Use Microsoft Purview Information Protection to classify and protect sensitive files",
+        "Monitor Defender for Identity alerts for suspicious credential access",
+        "Ensure Endpoint Detection and Response (EDR) is enabled"
+    ],
+    "T1098 - Account Manipulation": [
+        "Use Entra ID PIM to monitor and control privilege escalations",
+        "Enable Microsoft Defender for Identity to detect suspicious changes",
+        "Implement audit logs in Defender for Cloud to track account modifications",
+        "Use Security Information and Event Management (SIEM) for real-time alerts"
+    ],
+    "T1210 - Exploitation of Remote Services": [
+        "Ensure Defender for Cloud alerts on exploited remote services",
+        "Use Microsoft Sentinel to monitor and detect anomalous remote access attempts",
+        "Enforce strong authentication methods for remote access services",
+        "Apply security patches regularly to prevent exploitation"
+    ],
+    "T1562 - Impair Defenses": [
+        "Enable Defender for Endpoint to detect tampering or disabling of security tools",
+        "Monitor Defender for Identity alerts for attempts to disable logging",
+        "Use Azure Policy to enforce security configurations",
+        "Restrict administrative privileges to prevent security tool modifications"
+    ],
+    "T1071 - Application Layer Protocol": [
+        "Monitor Defender for Cloud alerts for unauthorized protocol usage",
+        "Use Microsoft Defender for Endpoint to detect unexpected network traffic",
+        "Implement Azure Firewall or Network Security Groups (NSG) to restrict unauthorized protocols",
+        "Analyze outbound network communications with Microsoft Sentinel"
+    ],
+    "T1566 - Phishing": [
+        "Enable Defender for Office 365 to detect and respond to phishing emails",
+        "Use Microsoft Defender for Identity to monitor credential theft attempts",
+        "Educate users with Microsoft Security Awareness Training",
+        "Implement phishing-resistant MFA for all users"
+    ],
+    "T1003 - OS Credential Dumping": [
+        "Enable Defender for Endpoint credential dumping protection",
+        "Monitor Defender for Identity alerts for LSASS memory dumping",
+        "Restrict access to critical Windows processes using Attack Surface Reduction (ASR) rules",
+        "Use credential guard to prevent unauthorized credential access"
+    ],
+    "T1059 - Command and Scripting Interpreter": [
+        "Monitor script execution with Defender for Endpoint",
+        "Enable Attack Surface Reduction (ASR) rules to block risky scripts",
+        "Restrict the use of PowerShell and other scripting tools unless necessary",
+        "Enable logging and monitoring of all command-line activity with Defender for Cloud"
+    ],
+    "T1102 - Web Service": [
+        "Monitor Microsoft Defender for Cloud alerts for unauthorized web service access",
+        "Use Defender for Endpoint to detect unusual outbound HTTP requests",
+        "Implement Conditional Access to restrict access to cloud applications",
+        "Use Azure Web Application Firewall (WAF) to block malicious web activities"
+    ],
+    "T1041 - Exfiltration Over C2 Channel": [
+        "Enable Defender for Cloud to detect data exfiltration events",
+        "Use Microsoft Defender for Endpoint to monitor for unusual outbound traffic",
+        "Implement Azure Information Protection to classify and prevent data leaks",
+        "Use Microsoft Sentinel to correlate and analyze security events in real-time"
+    ],
+    "T1070 - Indicator Removal": [
+        "Enable Defender for Endpoint to detect forensic evidence tampering",
+        "Use Microsoft Defender for Cloud to ensure logs and security monitoring are enforced",
+        "Monitor Defender for Identity alerts for suspicious log deletions",
+        "Implement immutable logging with Azure Monitor and Log Analytics"
+    ]
+}
