@@ -1,0 +1,116 @@
+mitre_ad_defenses = {
+    "T1003": [  # Credential Dumping
+        "Enable LSASS protection to prevent direct memory access.",
+        "Use Credential Guard to protect NTLM and Kerberos secrets.",
+        "Restrict debug privileges to prevent process memory dumping.",
+        "Monitor and alert on suspicious access to LSASS process."
+    ],
+    "T1078": [  # Valid Accounts
+        "Implement multi-factor authentication (MFA) for privileged accounts.",
+        "Use Just-In-Time (JIT) and Just-Enough-Administration (JEA) to limit access.",
+        "Monitor and alert on anomalous logins and privilege escalations.",
+        "Enforce strong password policies and regular credential rotation."
+    ],
+    "T1558": [  # Steal or Forge Kerberos Tickets
+        "Enable AES encryption for Kerberos authentication.",
+        "Monitor for abnormal Kerberos ticket requests and usage.",
+        "Limit the lifetime of Kerberos tickets and enforce renewal policies.",
+        "Use Protected Users group to prevent NTLM and Kerberos ticket theft."
+    ],
+    "T1484": [  # Domain Policy Modification
+        "Restrict access to Group Policy Objects (GPOs) to authorized administrators.",
+        "Monitor and alert on changes to GPOs and domain policies.",
+        "Use read-only domain controllers (RODCs) where applicable.",
+        "Implement role-based access control (RBAC) for policy modifications."
+    ],
+    "T1098": [  # Account Manipulation
+        "Monitor and alert on changes to privileged accounts.",
+        "Restrict the ability to modify account attributes to authorized personnel.",
+        "Use Privileged Access Workstations (PAWs) for administrative tasks.",
+        "Enforce strong authentication for account modifications."
+    ],
+    "T1552": [  # Unsecured Credentials
+        "Use Group Managed Service Accounts (gMSAs) to avoid hardcoded credentials.",
+        "Monitor for plaintext credentials stored in scripts or configuration files.",
+        "Enforce credential vaulting solutions for service accounts.",
+        "Restrict access to sensitive credential storage locations."
+    ],
+    "T1110": [  # Brute Force
+        "Implement account lockout policies to prevent repeated login attempts.",
+        "Monitor and alert on excessive failed authentication attempts.",
+        "Use MFA to mitigate password-based attacks.",
+        "Enforce strong password policies and periodic password changes."
+    ],
+    "T1071": [  # Application Layer Protocol
+        "Monitor and restrict unauthorized LDAP queries.",
+        "Use encrypted communication for LDAP and Kerberos traffic.",
+        "Implement network segmentation to limit unauthorized access.",
+        "Monitor for anomalous network traffic patterns."
+    ],
+    "T1136": [  # Create Account
+        "Restrict account creation privileges to authorized administrators.",
+        "Monitor and alert on new account creation events.",
+        "Use temporary accounts with expiration policies for contractors.",
+        "Enforce approval workflows for privileged account creation."
+    ],
+    "T1208": [  # Kerberoasting
+        "Enforce strong, randomly generated service account passwords.",
+        "Monitor for abnormal Kerberos ticket requests.",
+        "Restrict service account permissions to the minimum necessary.",
+        "Use Managed Service Accounts (MSAs) to mitigate password exposure."
+    ],
+    "T1555": [  # Credentials from Password Stores
+        "Disable storage of plaintext credentials in LSASS memory.",
+        "Use BitLocker to encrypt sensitive credential storage locations.",
+        "Monitor for unauthorized access to credential stores.",
+        "Restrict access to SAM and SYSTEM registry hives."
+    ],
+    "T1482": [  # Domain Trust Discovery
+        "Limit access to Active Directory trust relationships.",
+        "Monitor and alert on queries to domain trust information.",
+        "Use tiered administration to separate trust management roles.",
+        "Restrict access to domain controllers from untrusted networks."
+    ],
+    "T1087": [  # Account Discovery
+        "Restrict access to Active Directory enumeration tools.",
+        "Monitor and alert on excessive LDAP queries.",
+        "Use honeypot accounts to detect unauthorized enumeration.",
+        "Limit the visibility of sensitive accounts in AD."
+    ],
+    "T1069": [  # Permission Groups Discovery
+        "Monitor and alert on queries to privileged group memberships.",
+        "Restrict access to Active Directory enumeration tools.",
+        "Use tiered administration to separate privilege management roles.",
+        "Limit the visibility of sensitive groups in AD."
+    ],
+    "T1075": [  # Pass the Hash
+        "Enforce the use of Windows Defender Credential Guard.",
+        "Restrict NTLM authentication and enforce Kerberos-only authentication.",
+        "Monitor for suspicious logins using NTLM hashes.",
+        "Use LAPS to manage local administrator passwords securely."
+    ],
+    "T1556": [  # Modify Authentication Process
+        "Monitor and alert on changes to authentication mechanisms.",
+        "Restrict access to domain controllers and authentication services.",
+        "Use secure boot and code integrity policies to prevent tampering.",
+        "Enforce MFA for all privileged authentication processes."
+    ],
+    "T1021": [  # Remote Services
+        "Restrict RDP and other remote access services to authorized users.",
+        "Monitor and alert on unusual remote login activity.",
+        "Use jump servers for administrative remote access.",
+        "Enforce network segmentation to limit remote access exposure."
+    ],
+    "T1070": [  # Indicator Removal on Host
+        "Monitor and alert on event log clearing activities.",
+        "Restrict access to security event logs to authorized personnel.",
+        "Use centralized logging solutions to prevent log tampering.",
+        "Enforce endpoint detection and response (EDR) solutions."
+    ],
+    "T1495": [  # Firmware Corruption
+        "Enable Secure Boot to prevent unauthorized firmware modifications.",
+        "Monitor for firmware integrity violations.",
+        "Restrict physical access to domain controllers and critical servers.",
+        "Use hardware-based security features like TPM for boot integrity."
+    ]
+}
