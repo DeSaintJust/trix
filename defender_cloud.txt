@@ -1,0 +1,44 @@
+mitre_defender_mapping = {
+    "T1190 Exploit Public-Facing Application": [
+        "Enable Web Application Firewall (WAF) to detect and block exploits.",
+        "Utilize Defender for Cloud's vulnerability assessment tools for web applications.",
+        "Continuously monitor Azure Application Gateway logs for anomalies.",
+        "Use Azure Security Center recommendations for patch management."
+    ],
+    "T1133 External Remote Services": [
+        "Enable Conditional Access policies to restrict remote access based on risk level.",
+        "Monitor Azure AD sign-ins for anomalous remote access attempts.",
+        "Implement Multi-Factor Authentication (MFA) for all remote access accounts.",
+        "Use Microsoft Defender for Identity to monitor and detect unusual remote logins."
+    ],
+    "T1566 Phishing": [
+        "Enable Microsoft Defender for Office 365 to detect and neutralize phishing emails.",
+        "Use Safe Links and Safe Attachments to scan email content for malicious activity.",
+        "Monitor and analyze email forwarding rules for suspicious configurations.",
+        "Educate users on phishing threats through Microsoft Security Awareness Training."
+    ],
+    "T1078 Valid Accounts": [
+        "Enforce Privileged Identity Management (PIM) to limit privileged access duration.",
+        "Monitor Azure AD Identity Protection alerts for compromised accounts.",
+        "Use Defender for Cloud to enforce strong password policies and MFA requirements.",
+        "Audit and review login activity logs for unauthorized account access."
+    ],
+    "T1091 Replication Through Removable Media": [
+        "Apply Defender for Endpoint policies to block unauthorized USB devices.",
+        "Implement Data Loss Prevention (DLP) policies to monitor and restrict data transfer.",
+        "Use Microsoft Intune to enforce endpoint security policies on removable media.",
+        "Monitor Defender for Cloud alerts for unusual file transfers from USB devices."
+    ],
+    "T1195 Supply Chain Compromise": [
+        "Enable software composition analysis tools in Defender for Cloud to scan dependencies.",
+        "Monitor cloud-native CI/CD pipelines for tampering with code artifacts.",
+        "Require code-signing for all software packages and updates.",
+        "Implement continuous security reviews using Microsoft Defender for DevOps."
+    ],
+    "T1078.004 Cloud Accounts": [
+        "Monitor Azure AD Identity Protection risk detections for suspicious login attempts.",
+        "Use Microsoft Defender for Cloud security posture management to enforce least privilege access.",
+        "Enable audit logging for all cloud account activities and analyze logs for anomalies.",
+        "Implement Just-In-Time (JIT) access control to minimize exposure of cloud resources."
+    ]
+}
