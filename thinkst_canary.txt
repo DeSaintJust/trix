@@ -1,0 +1,118 @@
+mitre_defensive_requirements = {
+    "T1548 - Abuse Elevation Control Mechanism": [
+        "Deploy Canarytokens in sensitive directories to detect unauthorized privilege escalation attempts.",
+        "Use Windows Sensitive Command Token to monitor execution of privilege escalation commands."
+    ],
+    "T1134 - Access Token Manipulation": [
+        "Deploy Canarytokens in key system locations to detect unauthorized token usage.",
+        "Use Windows Sensitive Command Token to detect suspicious token manipulation commands."
+    ],
+    "T1087 - Account Discovery": [
+        "Deploy Canarytokens in Active Directory to detect unauthorized account enumeration.",
+        "Use Office 365 Mail Token to detect unauthorized access to email accounts."
+    ],
+    "T1098 - Account Manipulation": [
+        "Deploy Canarytokens in shared folders to detect unauthorized account modifications.",
+        "Use AWS API Key Token to detect unauthorized API key usage."
+    ],
+    "T1583 - Acquire Infrastructure": [
+        "Deploy Cloned Website Detection Canarytoken to detect unauthorized domain registrations.",
+        "Use Canary web image tokens to detect unauthorized access to fake infrastructure."
+    ],
+    "T1595 - Active Scanning": [
+        "Deploy Thinkst Canaries in network segments to detect unauthorized scanning activity.",
+        "Use Canarytokens in network shares to detect unauthorized enumeration."
+    ],
+    "T1557 - Adversary-in-the-Middle": [
+        "Deploy Canary routers to detect unauthorized network interception attempts.",
+        "Use Canary web image tokens to detect unauthorized access to internal web pages."
+    ],
+    "T1071 - Application Layer Protocol": [
+        "Deploy Canarytokens in Slack, Teams, or Mattermost to detect unauthorized API key usage.",
+        "Use AWS API Key Token to detect unauthorized API calls."
+    ],
+    "T1560 - Archive Collected Data": [
+        "Deploy Canarytokens in sensitive document repositories to detect unauthorized access.",
+        "Use Google Drive Tokens to detect unauthorized access to cloud-stored data."
+    ],
+    "T1110 - Brute Force": [
+        "Deploy Canarytokens in login portals to detect repeated failed login attempts.",
+        "Use Office 365 Mail Token to detect unauthorized access attempts."
+    ],
+    "T1555 - Credentials from Password Stores": [
+        "Deploy Canarytokens in password vaults to detect unauthorized access.",
+        "Use Windows Directory Token to detect unauthorized browsing of credential storage locations."
+    ],
+    "T1485 - Data Destruction": [
+        "Deploy Canarytokens in backup directories to detect unauthorized deletion attempts.",
+        "Use Google Drive Tokens to detect unauthorized file modifications."
+    ],
+    "T1565 - Data Manipulation": [
+        "Deploy Canarytokens in financial and operational documents to detect unauthorized modifications.",
+        "Use Office File Tokens to detect unauthorized access to sensitive reports."
+    ],
+    "T1041 - Exfiltration Over C2 Channel": [
+        "Deploy Canarytokens in sensitive data repositories to detect unauthorized access.",
+        "Use AWS API Key Token to detect unauthorized data exfiltration attempts."
+    ],
+    "T1190 - Exploit Public-Facing Application": [
+        "Deploy Thinkst Canaries in DMZ and web server segments to detect exploitation attempts.",
+        "Use Cloned Website Detection Canarytoken to detect unauthorized replication of web applications."
+    ],
+    "T1210 - Exploitation of Remote Services": [
+        "Deploy Thinkst Canaries in remote access service segments to detect unauthorized access attempts.",
+        "Use Windows Sensitive Command Token to detect unauthorized remote service usage."
+    ],
+    "T1133 - External Remote Services": [
+        "Deploy Canarytokens in VPN and remote access portals to detect unauthorized access.",
+        "Use WireGuard VPN Token to detect unauthorized VPN connection attempts."
+    ],
+    "T1046 - Network Service Discovery": [
+        "Deploy Thinkst Canaries in network segments to detect unauthorized service enumeration.",
+        "Use Windows Directory Token to detect unauthorized browsing of network shares."
+    ],
+    "T1021 - Remote Services": [
+        "Deploy Thinkst Canaries in RDP, SSH, and SMB segments to detect unauthorized access.",
+        "Use Windows Sensitive Command Token to detect unauthorized remote service usage."
+    ],
+    "T1078 - Valid Accounts": [
+        "Deploy Canarytokens in credential storage locations to detect unauthorized access.",
+        "Use AWS API Key Token to detect unauthorized API key usage."
+    ],
+    "T1556 - Modify Authentication Process": [
+        "Deploy Canarytokens in authentication logs to detect unauthorized modifications.",
+        "Use Azure Login Certificate Token to detect unauthorized authentication attempts."
+    ],
+    "T1218 - System Binary Proxy Execution": [
+        "Deploy Canarytokens in system directories to detect unauthorized execution of system binaries.",
+        "Use Windows Sensitive Command Token to detect suspicious command execution."
+    ],
+    "T1562 - Impair Defenses": [
+        "Deploy Canarytokens in security tool directories to detect unauthorized modifications.",
+        "Use Windows Directory Token to detect unauthorized browsing of security configurations."
+    ],
+    "T1053 - Scheduled Task/Job": [
+        "Deploy Canarytokens in task scheduler directories to detect unauthorized job creation.",
+        "Use Windows Sensitive Command Token to detect unauthorized task execution."
+    ],
+    "T1036 - Masquerading": [
+        "Deploy Canarytokens in system directories to detect unauthorized file modifications.",
+        "Use Windows Directory Token to detect unauthorized browsing of system files."
+    ],
+    "T1204 - User Execution": [
+        "Deploy Canarytokens in email attachments to detect unauthorized execution attempts.",
+        "Use Office File Tokens to detect unauthorized document execution."
+    ],
+    "T1105 - Ingress Tool Transfer": [
+        "Deploy Canarytokens in software repositories to detect unauthorized file transfers.",
+        "Use Google Drive Tokens to detect unauthorized file uploads."
+    ],
+    "T1573 - Encrypted Channel": [
+        "Deploy Canarytokens in network monitoring tools to detect unauthorized encrypted traffic.",
+        "Use AWS API Key Token to detect unauthorized API calls."
+    ],
+    "T1102 - Web Service": [
+        "Deploy Canarytokens in cloud storage services to detect unauthorized access.",
+        "Use Google Drive Tokens to detect unauthorized file modifications."
+    ]
+}
