@@ -1,0 +1,135 @@
+mitre_attack_to_aix_security = {
+    "T1003": [  # OS Credential Dumping
+        "Enable and configure AIX Auditing to monitor access to sensitive files.",
+        "Use Role-Based Access Control (RBAC) to restrict access to credential stores.",
+        "Ensure strong password policies are enforced via /etc/security/user.",
+        "Use Pluggable Authentication Modules (PAM) to enforce authentication controls.",
+        "Monitor and restrict access to /etc/passwd and /etc/security/passwd."
+    ],
+    "T1021": [  # Remote Services
+        "Disable unnecessary remote services in /etc/inetd.conf.",
+        "Use TCP/IP security features to restrict remote access.",
+        "Enable and configure OpenSSH with Kerberos authentication.",
+        "Use AIX Security Expert to enforce secure remote access policies.",
+        "Monitor and log remote authentication attempts using AIX Auditing."
+    ],
+    "T1059": [  # Command and Scripting Interpreter
+        "Restrict shell access using RBAC and user permissions.",
+        "Monitor shell execution using AIX Auditing.",
+        "Use Access Control Lists (ACLs) to limit script execution.",
+        "Disable unnecessary interpreters such as Perl or Python if not needed.",
+        "Enforce execution restrictions using AIX Intrusion Prevention."
+    ],
+    "T1078": [  # Valid Accounts
+        "Enforce strong authentication using LDAP and Kerberos.",
+        "Monitor login attempts and failed authentications using AIX Auditing.",
+        "Use PAM to enforce multi-factor authentication.",
+        "Restrict user privileges using RBAC.",
+        "Regularly review and disable inactive accounts."
+    ],
+    "T1105": [  # Ingress Tool Transfer
+        "Use IP filters to restrict unauthorized file transfers.",
+        "Monitor network activity using TCP/IP security features.",
+        "Restrict execution of downloaded files using ACLs.",
+        "Use AIX Security Expert to enforce secure file transfer policies.",
+        "Enable auditing for file creation and modification events."
+    ],
+    "T1136": [  # Create Account
+        "Restrict account creation to administrators using RBAC.",
+        "Monitor account creation events using AIX Auditing.",
+        "Use LDAP for centralized user management and authentication.",
+        "Enforce strict user provisioning policies.",
+        "Regularly review user accounts for unauthorized additions."
+    ],
+    "T1203": [  # Exploitation for Client Execution
+        "Keep AIX system and applications updated with security patches.",
+        "Use AIX Intrusion Prevention to detect and block exploitation attempts.",
+        "Restrict execution of untrusted applications using ACLs.",
+        "Monitor system logs for signs of exploitation.",
+        "Disable unnecessary services and applications."
+    ],
+    "T1210": [  # Exploitation of Remote Services
+        "Use IP filters to restrict access to remote services.",
+        "Enable Kerberos authentication for remote services.",
+        "Monitor remote service access using AIX Auditing.",
+        "Apply security patches to mitigate known vulnerabilities.",
+        "Use AIX Security Expert to enforce secure remote access policies."
+    ],
+    "T1485": [  # Data Destruction
+        "Use EFS Encrypted File System to protect sensitive data.",
+        "Monitor file deletion events using AIX Auditing.",
+        "Restrict file modification and deletion using ACLs.",
+        "Use backup and recovery solutions to restore lost data.",
+        "Limit user privileges to prevent unauthorized data destruction."
+    ],
+    "T1496": [  # Resource Hijacking
+        "Monitor system resource usage using AIX performance tools.",
+        "Restrict process execution using RBAC and ACLs.",
+        "Use AIX Intrusion Prevention to detect abnormal resource usage.",
+        "Limit user access to system resources.",
+        "Enforce process execution policies using AIX Security Expert."
+    ],
+    "T1548": [  # Abuse Elevation Control Mechanism
+        "Restrict use of sudo and su commands using RBAC.",
+        "Monitor privilege escalation attempts using AIX Auditing.",
+        "Use PAM to enforce strict authentication for privilege escalation.",
+        "Limit access to sensitive binaries using ACLs.",
+        "Regularly review and audit privileged user actions."
+    ],
+    "T1552": [  # Unsecured Credentials
+        "Store credentials securely using AIX Encrypted File System (EFS).",
+        "Restrict access to credential files using ACLs.",
+        "Monitor access to sensitive files using AIX Auditing.",
+        "Use PAM to enforce secure authentication mechanisms.",
+        "Regularly rotate and update stored credentials."
+    ],
+    "T1562": [  # Impair Defenses
+        "Monitor and log security configuration changes using AIX Auditing.",
+        "Restrict modification of security settings using RBAC.",
+        "Use AIX Security Expert to enforce security policies.",
+        "Regularly review and validate security configurations.",
+        "Enable alerts for unauthorized security changes."
+    ],
+    "T1574": [  # Hijack Execution Flow
+        "Restrict modification of system binaries using ACLs.",
+        "Monitor execution of critical processes using AIX Auditing.",
+        "Use AIX Intrusion Prevention to detect execution hijacking.",
+        "Enforce strict file integrity monitoring.",
+        "Limit user privileges to prevent unauthorized modifications."
+    ],
+    "T1583": [  # Acquire Infrastructure
+        "Monitor network activity for unauthorized infrastructure usage.",
+        "Restrict outbound connections using IP filters.",
+        "Use AIX Security Expert to enforce network security policies.",
+        "Regularly audit system and network configurations.",
+        "Detect and block unauthorized infrastructure acquisition attempts."
+    ],
+    "T1595": [  # Active Scanning
+        "Use IP filters to block unauthorized scanning attempts.",
+        "Monitor network traffic for scanning activity.",
+        "Use AIX Intrusion Prevention to detect and block scanning attempts.",
+        "Restrict access to sensitive network services.",
+        "Enable logging and alerts for suspicious network activity."
+    ],
+    "T1608": [  # Stage Capabilities
+        "Monitor file creation and modification using AIX Auditing.",
+        "Restrict execution of untrusted binaries using ACLs.",
+        "Use AIX Security Expert to enforce execution policies.",
+        "Detect and block unauthorized file transfers.",
+        "Regularly review system for staged malicious files."
+    ],
+    "T1610": [  # Deploy Container
+        "Restrict container execution using RBAC.",
+        "Monitor container activity using AIX Auditing.",
+        "Use ACLs to limit access to containerized environments.",
+        "Enforce security policies for container deployment.",
+        "Regularly review and audit container configurations."
+    ],
+    "T1620": [  # Reflective Code Loading
+        "Monitor process memory modifications using AIX Auditing.",
+        "Restrict execution of untrusted code using ACLs.",
+        "Use AIX Intrusion Prevention to detect reflective code loading.",
+        "Enforce strict execution policies using AIX Security Expert.",
+        "Regularly review system for unauthorized code execution."
+    ]
+}
