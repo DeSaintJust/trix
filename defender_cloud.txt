@@ -135,3 +135,125 @@ mitre_defender_mapping = {
         "Implement immutable logging with Azure Monitor and Log Analytics"
     ]
 }
+
+mitre_defender_mapping = {
+    "T1003": ["Enable credential dumping detection in Defender for Endpoint", 
+              "Monitor suspicious process execution", 
+              "Use Just Enough Administration (JEA)"],
+    
+    "T1021": ["Enable network traffic analysis in Defender for Cloud", 
+              "Monitor remote access tools", 
+              "Use Just-In-Time (JIT) VM access"],
+    
+    "T1059": ["Enable script execution monitoring", 
+              "Use Defender for Endpoint to detect malicious scripts", 
+              "Restrict PowerShell execution policies"],
+    
+    "T1071": ["Monitor network traffic for unusual patterns", 
+              "Enable Defender for Cloud alerts for command and control traffic", 
+              "Use Azure Firewall to block known malicious domains"],
+    
+    "T1082": ["Enable asset inventory monitoring", 
+              "Use Defender for Cloud to detect unauthorized system discovery", 
+              "Monitor system information queries"],
+    
+    "T1105": ["Enable Defender for Cloud alerts for unauthorized file transfers", 
+              "Monitor network traffic for large data exfiltration", 
+              "Use Microsoft Defender for Endpoint to detect suspicious downloads"],
+    
+    "T1110": ["Enable brute-force attack detection", 
+              "Use Azure AD Identity Protection", 
+              "Enforce multi-factor authentication (MFA)"],
+    
+    "T1135": ["Monitor network share access", 
+              "Use Defender for Cloud to detect lateral movement", 
+              "Restrict unnecessary SMB access"],
+    
+    "T1190": ["Enable Defender for Cloud vulnerability assessment", 
+              "Monitor web application firewall (WAF) logs", 
+              "Apply security patches regularly"],
+    
+    "T1210": ["Monitor lateral movement attempts", 
+              "Use Defender for Cloud to detect unauthorized access", 
+              "Restrict service account permissions"],
+    
+    "T1486": ["Enable ransomware protection in Defender for Endpoint", 
+              "Monitor file encryption activities", 
+              "Use Defender for Cloud to detect anomalous file modifications"],
+    
+    "T1566": ["Enable phishing protection in Defender for Office 365", 
+              "Monitor email attachments and links", 
+              "Use Defender for Cloud to detect suspicious email activity"],
+    
+    "T1574": ["Monitor DLL hijacking attempts", 
+              "Use Defender for Endpoint to detect process injection", 
+              "Restrict execution of unsigned binaries"],
+    
+    "T1046": ["Enable network scanning detection", 
+              "Use Defender for Cloud to monitor unauthorized network discovery", 
+              "Restrict unnecessary network access"],
+    
+    "T1055": ["Monitor process injection attempts", 
+              "Use Defender for Endpoint to detect memory manipulation", 
+              "Restrict execution of suspicious processes"],
+    
+    "T1078": ["Monitor use of compromised credentials", 
+              "Use Defender for Cloud to detect unusual login activity", 
+              "Enforce least privilege access"],
+    
+    "T1087": ["Monitor account enumeration attempts", 
+              "Use Defender for Cloud to detect unauthorized user discovery", 
+              "Restrict access to sensitive directories"],
+    
+    "T1090": ["Monitor proxy usage for suspicious activity", 
+              "Use Defender for Cloud to detect command and control traffic", 
+              "Block known malicious proxies"],
+    
+    "T1112": ["Monitor registry modifications", 
+              "Use Defender for Endpoint to detect unauthorized registry changes", 
+              "Restrict registry editing permissions"],
+    
+    "T1134": ["Monitor privilege escalation attempts", 
+              "Use Defender for Cloud to detect token manipulation", 
+              "Restrict unnecessary administrative privileges"],
+    
+    "T1203": ["Enable Defender for Cloud vulnerability assessment", 
+              "Monitor exploit attempts against applications", 
+              "Apply security patches regularly"],
+    
+    "T1218": ["Monitor execution of signed but malicious binaries", 
+              "Use Defender for Endpoint to detect abuse of trusted processes", 
+              "Restrict execution of unnecessary system utilities"],
+    
+    "T1499": ["Monitor denial-of-service attack attempts", 
+              "Use Defender for Cloud to detect unusual network traffic spikes", 
+              "Implement rate limiting on critical services"],
+    
+    "T1543": ["Monitor creation of new services", 
+              "Use Defender for Cloud to detect unauthorized service installations", 
+              "Restrict service creation permissions"],
+    
+    "T1552": ["Monitor access to sensitive files", 
+              "Use Defender for Cloud to detect credential exposure", 
+              "Enforce encryption of stored credentials"],
+    
+    "T1562": ["Monitor security tool tampering", 
+              "Use Defender for Endpoint to detect disabling of security controls", 
+              "Restrict administrative access to security tools"],
+    
+    "T1578": ["Monitor cloud resource modifications", 
+              "Use Defender for Cloud to detect unauthorized changes", 
+              "Enforce least privilege access to cloud resources"],
+    
+    "T1583": ["Monitor infrastructure acquisition activities", 
+              "Use Defender for Cloud to detect suspicious domain registrations", 
+              "Block known malicious hosting providers"],
+    
+    "T1595": ["Monitor reconnaissance activities", 
+              "Use Defender for Cloud to detect scanning attempts", 
+              "Restrict unnecessary exposure of services"],
+    
+    "T1608": ["Monitor supply chain compromise attempts", 
+              "Use Defender for Cloud to detect unauthorized software modifications", 
+              "Verify integrity of third-party software"]
+}
