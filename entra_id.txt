@@ -1,0 +1,102 @@
+mitre_to_microsoft_entra = {
+    "T1102": [
+        "Enable Microsoft Entra ID Protection to detect anomalous identity-based risks.",
+        "Use Conditional Access policies to restrict access from suspicious web services.",
+        "Monitor sign-in logs and risk detections in Microsoft Entra ID for unusual web service usage."
+    ],
+    "T1102.001": [
+        "Implement Conditional Access risk policies to block access from known dead drop resolvers.",
+        "Use Microsoft Entra ID Protection to detect and investigate suspicious authentication attempts.",
+        "Integrate Microsoft Entra ID logs with SIEM tools for further analysis of web service-based C2 activity."
+    ],
+    "T1102.002": [
+        "Configure Microsoft Entra ID to monitor bidirectional communication patterns with external web services.",
+        "Use Microsoft Defender for Identity to detect anomalous authentication requests.",
+        "Leverage Microsoft Entra access reviews to audit and remove unnecessary permissions."
+    ],
+    "T1102.003": [
+        "Deploy Microsoft Entra ID Protection to detect one-way communication patterns with external services.",
+        "Use Conditional Access policies to restrict access to high-risk web services.",
+        "Monitor and analyze sign-in logs for unusual outbound authentication requests."
+    ],
+    "T1047": [
+        "Enable Microsoft Entra Privileged Identity Management (PIM) to restrict WMI execution privileges.",
+        "Use Conditional Access policies to enforce multi-factor authentication (MFA) for administrative actions.",
+        "Monitor Microsoft Entra ID logs for unusual WMI-based authentication attempts."
+    ],
+    "T1220": [
+        "Use Microsoft Defender for Endpoint to detect and block XSL script execution.",
+        "Monitor Microsoft Entra ID sign-in logs for suspicious script-based authentication attempts.",
+        "Implement Conditional Access policies to restrict execution of untrusted scripts."
+    ],
+    "T1078": [
+        "Use Microsoft Entra ID Protection to detect compromised accounts.",
+        "Enforce strong authentication policies using Conditional Access.",
+        "Regularly review and remove unused or stale accounts using Microsoft Entra access reviews."
+    ],
+    "T1557": [
+        "Monitor network traffic using Microsoft Defender for Identity to detect adversary-in-the-middle attacks.",
+        "Use Microsoft Entra ID Protection to detect anomalous sign-in behavior.",
+        "Enforce MFA for all privileged accounts to mitigate credential interception risks."
+    ],
+    "T1021": [
+        "Restrict lateral movement by enforcing least privilege access with Microsoft Entra PIM.",
+        "Monitor sign-in logs for unusual authentication attempts across multiple systems.",
+        "Use Conditional Access policies to limit access to critical resources."
+    ],
+    "T1136": [
+        "Use Microsoft Entra ID Governance to manage and review newly created accounts.",
+        "Monitor for unauthorized account creation using Microsoft Entra ID Protection.",
+        "Enforce strict access control policies to prevent unauthorized privilege escalation."
+    ],
+    "T1071": [
+        "Monitor Microsoft Entra ID logs for unusual command and control (C2) traffic patterns.",
+        "Use Conditional Access policies to block access to high-risk communication channels.",
+        "Integrate Microsoft Entra ID with SIEM tools to detect and investigate suspicious network activity."
+    ],
+    "T1110": [
+        "Enable Microsoft Entra ID Protection to detect password spray and brute-force attacks.",
+        "Enforce strong password policies and MFA using Conditional Access.",
+        "Monitor failed authentication attempts in Microsoft Entra ID logs."
+    ],
+    "T1484": [
+        "Use Microsoft Entra ID Governance to review and manage group membership changes.",
+        "Monitor Microsoft Entra ID logs for unauthorized modifications to security groups.",
+        "Enforce Conditional Access policies to restrict administrative actions."
+    ],
+    "T1098": [
+        "Use Microsoft Entra PIM to enforce just-in-time access for privileged roles.",
+        "Monitor Microsoft Entra ID logs for unauthorized privilege escalation attempts.",
+        "Regularly review and audit privileged role assignments."
+    ],
+    "T1190": [
+        "Use Microsoft Defender for Identity to detect and block exploitation of web-based authentication services.",
+        "Monitor Microsoft Entra ID logs for unusual authentication requests.",
+        "Enforce Conditional Access policies to restrict access to vulnerable applications."
+    ],
+    "T1203": [
+        "Use Microsoft Defender for Endpoint to detect and block exploitation of application vulnerabilities.",
+        "Monitor Microsoft Entra ID logs for suspicious authentication attempts following an exploit.",
+        "Enforce Conditional Access policies to limit access to critical applications."
+    ],
+    "T1566": [
+        "Enable Microsoft Defender for Office 365 to detect and block phishing attempts.",
+        "Use Microsoft Entra ID Protection to detect and investigate credential phishing attacks.",
+        "Enforce MFA using Conditional Access to mitigate phishing risks."
+    ],
+    "T1070": [
+        "Monitor Microsoft Entra ID logs for signs of log deletion or tampering.",
+        "Use Microsoft Defender for Identity to detect attempts to evade detection.",
+        "Enforce strict access controls to prevent unauthorized log modifications."
+    ],
+    "T1027": [
+        "Use Microsoft Defender for Endpoint to detect and block obfuscated malware execution.",
+        "Monitor Microsoft Entra ID logs for unusual authentication attempts linked to obfuscated scripts.",
+        "Enforce Conditional Access policies to restrict execution of untrusted code."
+    ],
+    "T1059": [
+        "Monitor Microsoft Entra ID logs for suspicious script execution patterns.",
+        "Use Microsoft Defender for Identity to detect and block malicious script execution.",
+        "Enforce Conditional Access policies to restrict execution of unauthorized scripts."
+    ]
+}
