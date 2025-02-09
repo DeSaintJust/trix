@@ -1,0 +1,102 @@
+mitre_attack_defenses = {
+    "T1071": [  # Application Layer Protocol
+        "Enable Amazon GuardDuty to detect unauthorized or unexpected network communications.",
+        "Monitor GuardDuty findings for suspicious DNS queries or command-and-control (C2) traffic.",
+        "Use AWS Config to ensure GuardDuty is enabled across all accounts and regions."
+    ],
+    "T1021": [  # Remote Services
+        "Use GuardDuty to detect unauthorized access to AWS services via remote protocols.",
+        "Monitor GuardDuty findings for unusual API calls or access patterns.",
+        "Ensure AWS Config rules enforce least privilege access to remote services."
+    ],
+    "T1566": [  # Phishing
+        "Enable GuardDuty to detect phishing-related activities such as credential theft attempts.",
+        "Monitor GuardDuty findings for anomalous login attempts or API calls.",
+        "Use AWS Config to enforce MFA and IAM best practices."
+    ],
+    "T1078": [  # Valid Accounts
+        "Use GuardDuty to detect unauthorized use of valid AWS credentials.",
+        "Monitor GuardDuty findings for unusual login locations or access patterns.",
+        "Ensure AWS Config enforces IAM policies restricting access to critical resources."
+    ],
+    "T1496": [  # Resource Hijacking
+        "Enable GuardDuty to detect unauthorized use of AWS resources for cryptomining.",
+        "Monitor GuardDuty findings for unexpected spikes in resource utilization.",
+        "Use AWS Config to enforce restrictions on EC2 instance types and permissions."
+    ],
+    "T1136": [  # Create Account
+        "Use GuardDuty to detect unauthorized IAM user or role creation.",
+        "Monitor GuardDuty findings for suspicious account creation activities.",
+        "Ensure AWS Config enforces IAM policies restricting account creation."
+    ],
+    "T1087": [  # Account Discovery
+        "Enable GuardDuty to detect reconnaissance activities targeting AWS IAM users.",
+        "Monitor GuardDuty findings for excessive IAM enumeration API calls.",
+        "Use AWS Config to enforce IAM least privilege principles."
+    ],
+    "T1098": [  # Account Manipulation
+        "Use GuardDuty to detect unauthorized changes to IAM roles and policies.",
+        "Monitor GuardDuty findings for privilege escalation attempts.",
+        "Ensure AWS Config enforces IAM role change monitoring."
+    ],
+    "T1210": [  # Exploitation of Remote Services
+        "Enable GuardDuty to detect exploitation attempts against AWS services.",
+        "Monitor GuardDuty findings for unusual API calls or privilege escalation attempts.",
+        "Use AWS Config to enforce security group restrictions."
+    ],
+    "T1046": [  # Network Service Scanning
+        "Use GuardDuty to detect internal and external network reconnaissance.",
+        "Monitor GuardDuty findings for port scanning or enumeration activities.",
+        "Ensure AWS Config enforces VPC Flow Logs and security group best practices."
+    ],
+    "T1497": [  # Virtualization/Sandbox Evasion
+        "Enable GuardDuty to detect attempts to evade AWS security monitoring.",
+        "Monitor GuardDuty findings for suspicious API calls related to instance metadata access.",
+        "Use AWS Config to enforce logging and monitoring policies."
+    ],
+    "T1562": [  # Impair Defenses
+        "Use GuardDuty to detect attempts to disable AWS security services.",
+        "Monitor GuardDuty findings for API calls disabling CloudTrail or GuardDuty.",
+        "Ensure AWS Config enforces continuous monitoring of security configurations."
+    ],
+    "T1070": [  # Indicator Removal
+        "Enable GuardDuty to detect attempts to delete or modify CloudTrail logs.",
+        "Monitor GuardDuty findings for suspicious log deletion activities.",
+        "Use AWS Config to enforce CloudTrail logging and retention policies."
+    ],
+    "T1485": [  # Data Destruction
+        "Use GuardDuty to detect unauthorized data deletion attempts.",
+        "Monitor GuardDuty findings for API calls related to S3 object deletions.",
+        "Ensure AWS Config enforces S3 bucket versioning and MFA delete."
+    ],
+    "T1530": [  # Data from Cloud Storage
+        "Enable GuardDuty to detect unauthorized access to S3 buckets.",
+        "Monitor GuardDuty findings for anomalous S3 API calls.",
+        "Use AWS Config to enforce S3 bucket encryption and access control policies."
+    ],
+    "T1557": [  # Man-in-the-Middle
+        "Use GuardDuty to detect DNS poisoning or spoofing attempts.",
+        "Monitor GuardDuty findings for suspicious network traffic patterns.",
+        "Ensure AWS Config enforces VPC Flow Logs and DNS query logging."
+    ],
+    "T1071.001": [  # Web Protocols
+        "Enable GuardDuty to detect suspicious HTTP/S traffic patterns.",
+        "Monitor GuardDuty findings for anomalous web requests.",
+        "Use AWS Config to enforce WAF rules and CloudFront security policies."
+    ],
+    "T1102": [  # Web Service Communication
+        "Use GuardDuty to detect unauthorized API calls to external services.",
+        "Monitor GuardDuty findings for suspicious outbound traffic.",
+        "Ensure AWS Config enforces IAM policies restricting external API access."
+    ],
+    "T1203": [  # Exploitation for Client Execution
+        "Enable GuardDuty to detect exploitation attempts against AWS services.",
+        "Monitor GuardDuty findings for suspicious execution of AWS Lambda functions.",
+        "Use AWS Config to enforce least privilege execution policies."
+    ],
+    "T1567": [  # Exfiltration Over Web
+        "Use GuardDuty to detect data exfiltration via HTTP/S.",
+        "Monitor GuardDuty findings for large outbound data transfers.",
+        "Ensure AWS Config enforces S3 access logging and data loss prevention policies."
+    ]
+}
