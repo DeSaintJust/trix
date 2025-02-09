@@ -1,0 +1,48 @@
+mitre_guardduty_defense = {
+    "T1078": [  # Valid Accounts (Credential Access)
+        "Enable GuardDuty to detect unauthorized access attempts.",
+        "Monitor GuardDuty findings for unusual credential usage.",
+        "Use AWS IAM policies to enforce least privilege access.",
+        "Enable AWS CloudTrail logging for API activity monitoring."
+    ],
+    "T1557": [  # Adversary-in-the-Middle (Credential Access)
+        "Monitor GuardDuty findings for suspicious network traffic.",
+        "Use AWS VPC Flow Logs to analyze network behavior.",
+        "Enable GuardDuty threat intelligence feeds to detect known malicious IPs."
+    ],
+    "T1046": [  # Network Service Discovery (Discovery)
+        "Enable GuardDuty to detect reconnaissance activities.",
+        "Monitor GuardDuty findings for unusual port scanning behavior.",
+        "Use AWS Security Groups to restrict unnecessary open ports."
+    ],
+    "T1203": [  # Exploitation for Client Execution (Execution)
+        "Enable GuardDuty to detect execution of malicious code.",
+        "Monitor GuardDuty findings for suspicious process execution.",
+        "Use AWS Systems Manager Patch Manager to keep software updated."
+    ],
+    "T1562": [  # Impair Defenses (Defense Evasion)
+        "Enable GuardDuty to detect evasion techniques.",
+        "Monitor GuardDuty findings for signs of log tampering.",
+        "Use AWS Config to track changes in security configurations."
+    ],
+    "T1020": [  # Automated Exfiltration (Exfiltration)
+        "Enable GuardDuty to detect data exfiltration attempts.",
+        "Monitor GuardDuty findings for unusual data transfer patterns.",
+        "Use AWS Macie to classify and protect sensitive data."
+    ],
+    "T1496": [  # Resource Hijacking (Cryptocurrency)
+        "Enable GuardDuty to detect cryptocurrency mining activities.",
+        "Monitor GuardDuty findings for unauthorized compute resource usage.",
+        "Use AWS Cost Explorer to track unexpected spikes in resource usage."
+    ],
+    "T1071": [  # Application Layer Protocol (Command and Control)
+        "Enable GuardDuty to detect communication with known C2 servers.",
+        "Monitor GuardDuty findings for anomalous outbound traffic.",
+        "Use AWS Network Firewall to block known malicious domains."
+    ],
+    "T1090": [  # Proxy (Command and Control)
+        "Enable GuardDuty to detect use of anonymization services.",
+        "Monitor GuardDuty findings for traffic to known proxy services.",
+        "Use AWS WAF to block suspicious web traffic."
+    ]
+}
