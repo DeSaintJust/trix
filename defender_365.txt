@@ -1,0 +1,85 @@
+mitre_defender_mapping = {
+    "T1566": [  # Phishing
+        "Enable Safe Links to protect against malicious URLs in emails and Teams.",
+        "Enable Safe Attachments to scan email attachments for malware.",
+        "Use Attack Simulation Training to educate users on phishing threats.",
+        "Monitor phishing trends using Email & Collaboration Reports."
+    ],
+    "T1204": [  # User Execution
+        "Enable Safe Links to prevent users from clicking on malicious links.",
+        "Use Attack Simulation Training to test user susceptibility to malicious links.",
+        "Monitor user activity in Microsoft Defender portal for suspicious behavior."
+    ],
+    "T1071": [  # Application Layer Protocol
+        "Monitor email traffic using Defender for Office 365 reports.",
+        "Use Microsoft Sentinel integration to detect anomalous communication patterns."
+    ],
+    "T1562": [  # Impair Defenses
+        "Enable automated investigation and response to detect and mitigate security control tampering.",
+        "Monitor Defender for Office 365 reports for signs of security feature disablement."
+    ],
+    "T1059": [  # Command and Scripting Interpreter
+        "Use Microsoft Defender for Endpoint integration to detect script-based attacks.",
+        "Monitor email attachments for embedded scripts using Safe Attachments."
+    ],
+    "T1104": [  # Multi-Stage Channels
+        "Enable Safe Links to prevent staged payload delivery via malicious URLs.",
+        "Use Microsoft Sentinel to correlate multi-stage attack indicators."
+    ],
+    "T1078": [  # Valid Accounts
+        "Enable Microsoft Entra ID Protection to detect compromised accounts.",
+        "Monitor sign-in activity for unusual authentication patterns."
+    ],
+    "T1110": [  # Brute Force
+        "Enable Microsoft Entra ID Protection to detect and block brute-force attempts.",
+        "Monitor failed login attempts in Microsoft Defender portal."
+    ],
+    "T1567": [  # Exfiltration Over Web Service
+        "Monitor Defender for Office 365 reports for unusual data transfer activity.",
+        "Use Microsoft Defender for Cloud Apps to detect data exfiltration attempts."
+    ],
+    "T1027": [  # Obfuscated Files or Information
+        "Enable Safe Attachments to scan for obfuscated malware in email attachments.",
+        "Use automated investigation and response to analyze suspicious files."
+    ],
+    "T1203": [  # Exploitation for Client Execution
+        "Enable Safe Attachments to block exploit-laden email attachments.",
+        "Use Microsoft Defender for Endpoint to detect exploit attempts."
+    ],
+    "T1133": [  # External Remote Services
+        "Monitor Defender for Office 365 reports for unauthorized remote access attempts.",
+        "Use Microsoft Sentinel to detect anomalous remote access patterns."
+    ],
+    "T1568": [  # Dynamic Resolution
+        "Enable Safe Links to block malicious domains used in dynamic resolution attacks.",
+        "Use Microsoft Defender for Endpoint to detect suspicious DNS queries."
+    ],
+    "T1070": [  # Indicator Removal on Host
+        "Enable automated investigation and response to detect log tampering.",
+        "Monitor Defender for Office 365 reports for signs of log deletion."
+    ],
+    "T1036": [  # Masquerading
+        "Use Microsoft Defender for Office 365 to detect email spoofing and impersonation.",
+        "Enable Safe Links to prevent access to impersonation-based phishing sites."
+    ],
+    "T1056": [  # Input Capture
+        "Monitor Defender for Office 365 reports for credential harvesting attempts.",
+        "Use Microsoft Entra ID Protection to detect suspicious login behaviors."
+    ],
+    "T1074": [  # Data Staged
+        "Use Microsoft Defender for Cloud Apps to detect unusual file storage activity.",
+        "Monitor Defender for Office 365 reports for large data transfers."
+    ],
+    "T1486": [  # Data Encrypted for Impact
+        "Enable Safe Attachments to block ransomware-laden email attachments.",
+        "Use Microsoft Defender for Endpoint to detect ransomware activity."
+    ],
+    "T1098": [  # Account Manipulation
+        "Enable Microsoft Entra ID Protection to detect unauthorized account changes.",
+        "Monitor Defender for Office 365 reports for privilege escalation attempts."
+    ],
+    "T1190": [  # Exploit Public-Facing Application
+        "Use Microsoft Defender for Endpoint to detect exploitation attempts.",
+        "Monitor Defender for Office 365 reports for signs of web-based attacks."
+    ]
+}
