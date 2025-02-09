@@ -1,0 +1,102 @@
+mitre_checkpoint_mapping = {
+    "T1003": [  # Credential Dumping
+        "Enable Check Point Anti-Bot and Anti-Virus to detect malicious credential dumping tools.",
+        "Use Check Point Endpoint Security (Harmony Endpoint) to prevent unauthorized access to LSASS memory.",
+        "Implement Check Point Identity Awareness to monitor and restrict credential usage."
+    ],
+    "T1059": [  # Command and Scripting Interpreter
+        "Use Check Point Threat Emulation to detect and block malicious scripts.",
+        "Enable Check Point IPS signatures for known scripting-based attacks.",
+        "Deploy Check Point Harmony Endpoint to restrict unauthorized script execution."
+    ],
+    "T1071": [  # Application Layer Protocol
+        "Enable Check Point Threat Prevention to inspect and block C2 traffic over common protocols.",
+        "Use Check Point SandBlast to analyze suspicious network traffic.",
+        "Implement Check Point Firewall rules to restrict unauthorized outbound connections."
+    ],
+    "T1105": [  # Ingress Tool Transfer
+        "Enable Check Point Anti-Bot to detect and block malicious file transfers.",
+        "Use Check Point Threat Extraction to sanitize downloaded files.",
+        "Deploy Check Point URL Filtering to block access to known malicious domains."
+    ],
+    "T1021": [  # Remote Services
+        "Use Check Point Identity Awareness to monitor and restrict remote access.",
+        "Enable Check Point IPS protections for RDP, SSH, and SMB brute-force attacks.",
+        "Deploy Check Point Harmony Endpoint to enforce MFA for remote access."
+    ],
+    "T1134": [  # Access Token Manipulation
+        "Enable Check Point Harmony Endpoint to detect and prevent token theft.",
+        "Use Check Point Threat Hunting to monitor suspicious privilege escalation.",
+        "Deploy Check Point Anti-Bot to detect malware leveraging token manipulation."
+    ],
+    "T1486": [  # Data Encrypted for Impact (Ransomware)
+        "Enable Check Point Anti-Ransomware protection in Harmony Endpoint.",
+        "Use Check Point Threat Emulation to detect ransomware payloads.",
+        "Deploy Check Point Backup and Recovery solutions to mitigate ransomware impact."
+    ],
+    "T1566": [  # Phishing
+        "Enable Check Point Email Security to detect and block phishing emails.",
+        "Use Check Point Threat Emulation to analyze email attachments for malware.",
+        "Deploy Check Point URL Filtering to block access to phishing websites."
+    ],
+    "T1203": [  # Exploitation for Client Execution
+        "Enable Check Point IPS to detect and block exploit attempts.",
+        "Use Check Point Threat Emulation to analyze and block malicious payloads.",
+        "Deploy Check Point Harmony Endpoint to prevent exploitation of vulnerable applications."
+    ],
+    "T1210": [  # Exploitation of Remote Services
+        "Enable Check Point IPS protections for remote service vulnerabilities.",
+        "Use Check Point Threat Prevention to block known exploit attempts.",
+        "Deploy Check Point Firewall rules to restrict unnecessary remote access."
+    ],
+    "T1548": [  # Abuse Elevation Control Mechanism
+        "Enable Check Point Harmony Endpoint to prevent privilege escalation.",
+        "Use Check Point Threat Hunting to monitor suspicious privilege changes.",
+        "Deploy Check Point Anti-Bot to detect malware attempting privilege escalation."
+    ],
+    "T1078": [  # Valid Accounts
+        "Use Check Point Identity Awareness to monitor and restrict account usage.",
+        "Enable Check Point Threat Hunting to detect anomalous login behavior.",
+        "Deploy Check Point MFA for critical system access."
+    ],
+    "T1499": [  # Endpoint Denial of Service
+        "Enable Check Point Anti-Bot to detect and block DoS malware.",
+        "Use Check Point IPS to mitigate DoS attack techniques.",
+        "Deploy Check Point Harmony Endpoint to prevent resource exhaustion attacks."
+    ],
+    "T1135": [  # Network Share Discovery
+        "Enable Check Point Firewall rules to restrict unnecessary network share access.",
+        "Use Check Point Threat Prevention to detect lateral movement attempts.",
+        "Deploy Check Point Harmony Endpoint to monitor unauthorized file access."
+    ],
+    "T1027": [  # Obfuscated Files or Information
+        "Enable Check Point Threat Emulation to analyze obfuscated payloads.",
+        "Use Check Point Anti-Virus to detect packed or encrypted malware.",
+        "Deploy Check Point SandBlast to inspect suspicious file behavior."
+    ],
+    "T1055": [  # Process Injection
+        "Enable Check Point Harmony Endpoint to detect and block process injection.",
+        "Use Check Point Threat Hunting to monitor suspicious process behavior.",
+        "Deploy Check Point Anti-Bot to detect malware using process injection techniques."
+    ],
+    "T1087": [  # Account Discovery
+        "Enable Check Point Identity Awareness to monitor account enumeration.",
+        "Use Check Point Threat Hunting to detect suspicious account queries.",
+        "Deploy Check Point Firewall rules to restrict unnecessary LDAP access."
+    ],
+    "T1018": [  # Remote System Discovery
+        "Enable Check Point Threat Prevention to detect network reconnaissance.",
+        "Use Check Point Firewall rules to restrict unauthorized network scanning.",
+        "Deploy Check Point Anti-Bot to detect malware performing network discovery."
+    ],
+    "T1036": [  # Masquerading
+        "Enable Check Point Harmony Endpoint to detect renamed or disguised executables.",
+        "Use Check Point Threat Emulation to analyze suspicious file behavior.",
+        "Deploy Check Point Anti-Bot to detect malware using masquerading techniques."
+    ],
+    "T1574": [  # Hijack Execution Flow
+        "Enable Check Point Harmony Endpoint to prevent DLL hijacking.",
+        "Use Check Point Threat Hunting to monitor suspicious execution flow changes.",
+        "Deploy Check Point Anti-Bot to detect malware leveraging execution hijacking."
+    ]
+}
