@@ -1,0 +1,92 @@
+{
+    "T1498 - Network Denial of Service": [
+        "Use DDoS protection mechanisms to filter and block excessive traffic.",
+        "Monitor traffic patterns for sudden spikes indicative of an attack.",
+        "Implement rate-limiting policies to restrict excessive request rates.",
+        "Utilize network lists to block known malicious IPs and geographical sources.",
+        "Deploy automated WAF protections to detect and mitigate abnormal traffic behavior.",
+        "Leverage client reputation services to proactively block known attackers.",
+        "Enforce rate policies to prevent excessive automated traffic from a single source.",
+        "Monitor real-time logs and alerts for signs of ongoing network saturation attacks.",
+        "Enable automatic updates to security rules to stay protected against evolving DDoS tactics.",
+        "Set up match targets to customize protection for different endpoints and services."
+    ],
+    
+    "T1665 - Application Exhaustion Flood": [
+        "Use WAF rules to detect and prevent high-frequency application requests.",
+        "Deploy rate policies to enforce request thresholds on critical endpoints.",
+        "Monitor API request constraints to prevent excessive API calls.",
+        "Leverage client reputation services to block known botnets and scrapers.",
+        "Enable behavioral anomaly detection to identify abnormal access patterns.",
+        "Block requests from suspicious IP addresses using network lists.",
+        "Apply bot mitigation techniques to distinguish between legitimate and automated traffic.",
+        "Monitor security logs and generate alerts for anomalous request patterns.",
+        "Enforce API gateway controls to limit access based on authentication and request behavior.",
+        "Optimize caching mechanisms to reduce load on backend servers during high traffic spikes."
+    ],
+    
+    "T1498.001 - Direct Network Flood": [
+        "Use Akamai’s DDoS mitigation to filter and absorb volumetric traffic floods.",
+        "Deploy rate-limiting on ingress traffic to prevent excessive connections.",
+        "Utilize network lists to block traffic from known attack sources and regions.",
+        "Monitor edge security logs to detect sudden traffic surges.",
+        "Leverage Akamai’s automated protection updates to counter evolving threats.",
+        "Apply WAF controls to enforce request limits per client.",
+        "Use behavioral-based detection to differentiate between normal and malicious traffic.",
+        "Segment security policies to ensure high-priority applications receive enhanced protection.",
+        "Deploy bot management to block automated traffic sources.",
+        "Implement TLS termination at the edge to offload resource-intensive tasks from origin servers."
+    ],
+    
+    "T1498.002 - Reflection Amplification": [
+        "Use adaptive rate-limiting to throttle traffic from suspected amplification sources.",
+        "Monitor inbound traffic for abnormal UDP/TCP patterns associated with amplification attacks.",
+        "Leverage Akamai’s DDoS protection to absorb and mitigate reflection traffic.",
+        "Deploy network-level filtering to block spoofed requests used in amplification attacks.",
+        "Use client reputation insights to block requests from suspicious hosts.",
+        "Enable anomaly detection for identifying misconfigured or abused protocols like DNS.",
+        "Employ geo-blocking to restrict traffic from regions frequently exploited for amplification.",
+        "Analyze real-time security event logs to detect amplification attack signatures.",
+        "Use WAF rules to enforce protocol compliance and deny malformed requests.",
+        "Implement API gateway rate policies to detect and drop suspected attack traffic."
+    ],
+    
+    "T1499.002 - Application Layer Protocol Flood": [
+        "Enforce WAF rules to filter excessive HTTP/S requests.",
+        "Use rate policies to limit high-frequency requests targeting application endpoints.",
+        "Deploy bot management to differentiate between legitimate and automated traffic.",
+        "Monitor abnormal API usage patterns to detect potential abuse.",
+        "Block malicious IPs using network lists to prevent repetitive request flooding.",
+        "Leverage security analytics to track application layer anomalies in real-time.",
+        "Deploy client reputation assessments to block suspicious clients proactively.",
+        "Optimize caching strategies to minimize the impact of excessive request volumes.",
+        "Implement behavioral analytics to detect and mitigate sudden traffic bursts.",
+        "Use match targets to segment protection policies for different web properties."
+    ],
+    
+    "T1499.003 - TCP SYN Flood": [
+        "Leverage Akamai’s DDoS protection to absorb excessive TCP SYN requests.",
+        "Implement rate-limiting policies to restrict repetitive connection attempts.",
+        "Monitor real-time logs for excessive half-open connections.",
+        "Deploy network lists to block IPs generating high SYN packet volumes.",
+        "Use automated WAF protections to detect and mitigate SYN flood patterns.",
+        "Enable real-time alerts for SYN flood signatures to enable rapid mitigation.",
+        "Utilize Akamai’s automated security updates to handle new attack variations.",
+        "Segment network traffic using security policies to isolate attack traffic.",
+        "Use behavioral analysis to track and identify SYN flood attack patterns.",
+        "Integrate security monitoring tools to enhance SYN flood detection capabilities."
+    ],
+    
+    "T1499.004 - UDP Flood": [
+        "Deploy Akamai’s DDoS protection to filter and absorb large UDP floods.",
+        "Monitor for abnormal UDP traffic patterns and spikes.",
+        "Utilize geofencing to block UDP traffic from high-risk regions.",
+        "Implement rate-limiting policies for UDP-based services.",
+        "Leverage security analytics to detect and classify UDP-based attack traffic.",
+        "Block spoofed UDP packets using network-layer filtering techniques.",
+        "Enable logging and real-time alerts for abnormal UDP traffic surges.",
+        "Apply WAF rules to detect and prevent UDP-based application flood attempts.",
+        "Segment UDP service protections using match targets to fine-tune security policies.",
+        "Use automated anomaly detection to proactively identify UDP flood attacks."
+    ]
+}
