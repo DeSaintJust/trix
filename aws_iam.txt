@@ -1,0 +1,103 @@
+mitre_aws_defenses = {
+    "T1078": [  # Valid Accounts
+        "Enable AWS Multi-Factor Authentication (MFA) for all IAM users.",
+        "Use AWS IAM Identity Center (SSO) to manage user authentication centrally.",
+        "Monitor AWS CloudTrail logs for unusual login activity.",
+        "Restrict IAM user access using least privilege principles."
+    ],
+    "T1552": [  # Unsecured Credentials
+        "Use AWS Secrets Manager to securely store and manage credentials.",
+        "Enforce IAM policies that deny hardcoded credentials in AWS Lambda functions.",
+        "Enable AWS Config rules to detect and remediate exposed credentials."
+    ],
+    "T1071": [  # Application Layer Protocol
+        "Require Transport Layer Security (TLS) 1.2 or higher for all IAM API calls.",
+        "Use AWS VPC endpoints to restrict IAM API access to internal networks.",
+        "Monitor AWS CloudTrail logs for unauthorized API calls."
+    ],
+    "T1098": [  # Account Manipulation
+        "Enable AWS IAM Access Analyzer to detect unusual permission changes.",
+        "Use AWS Security Hub to monitor IAM policy modifications.",
+        "Require IAM role assumption logging via AWS CloudTrail."
+    ],
+    "T1136": [  # Create Account
+        "Restrict IAM user creation to specific administrative roles.",
+        "Monitor AWS CloudTrail for unexpected IAM user creation events.",
+        "Use AWS Organizations Service Control Policies (SCPs) to prevent unauthorized account creation."
+    ],
+    "T1550": [  # Use Alternate Authentication Material
+        "Rotate IAM access keys regularly using AWS IAM Access Analyzer.",
+        "Use AWS Security Token Service (STS) for temporary credentials instead of long-lived keys.",
+        "Restrict IAM role assumption to trusted AWS accounts."
+    ],
+    "T1070": [  # Indicator Removal on Host
+        "Enable AWS CloudTrail with log file validation to prevent tampering.",
+        "Use AWS Config to ensure CloudTrail logging is always enabled.",
+        "Restrict IAM permissions to modify or delete CloudTrail logs."
+    ],
+    "T1021": [  # Remote Services
+        "Restrict IAM permissions for AWS Systems Manager Session Manager.",
+        "Use AWS IAM policies to limit access to EC2 instances via SSH or RDP.",
+        "Monitor AWS CloudTrail for remote access events."
+    ],
+    "T1484": [  # Domain Policy Modification
+        "Use AWS Organizations SCPs to enforce security policies across accounts.",
+        "Monitor AWS IAM policy changes using AWS Config and AWS Security Hub.",
+        "Restrict IAM permissions to modify AWS Organizations settings."
+    ],
+    "T1090": [  # Proxy
+        "Restrict IAM API access to specific IP addresses using IAM policies.",
+        "Use AWS VPC Flow Logs to monitor network traffic for suspicious proxy activity.",
+        "Enable AWS GuardDuty to detect anomalous network behavior."
+    ],
+    "T1562": [  # Impair Defenses
+        "Restrict IAM permissions to disable AWS Security Hub or GuardDuty.",
+        "Monitor AWS CloudTrail for API calls that disable security services.",
+        "Use AWS Config to enforce security service enablement."
+    ],
+    "T1074": [  # Data Staging
+        "Restrict IAM permissions to create and modify S3 buckets.",
+        "Enable AWS Macie to detect sensitive data stored in S3.",
+        "Monitor AWS CloudTrail for large data transfers."
+    ],
+    "T1530": [  # Data from Cloud Storage
+        "Use AWS IAM policies to enforce least privilege access to S3 buckets.",
+        "Enable AWS Macie to detect unauthorized access to sensitive data.",
+        "Monitor AWS CloudTrail for unusual S3 access patterns."
+    ],
+    "T1557": [  # Man-in-the-Middle
+        "Require TLS 1.2 or higher for all AWS API communications.",
+        "Use AWS PrivateLink to securely access AWS services without exposing traffic to the internet.",
+        "Monitor AWS CloudTrail for unauthorized API calls."
+    ],
+    "T1075": [  # Pass the Hash
+        "Use AWS IAM roles instead of static credentials.",
+        "Enforce MFA for all IAM users to prevent credential theft.",
+        "Monitor AWS CloudTrail for unusual authentication attempts."
+    ],
+    "T1110": [  # Brute Force
+        "Enable AWS IAM Access Analyzer to detect excessive failed login attempts.",
+        "Use AWS WAF to block IPs with repeated failed authentication attempts.",
+        "Monitor AWS CloudTrail for failed authentication events."
+    ],
+    "T1555": [  # Credentials from Password Stores
+        "Use AWS Secrets Manager to securely store and rotate credentials.",
+        "Restrict IAM permissions to access AWS Secrets Manager.",
+        "Monitor AWS CloudTrail for unauthorized access to secrets."
+    ],
+    "T1003": [  # OS Credential Dumping
+        "Use AWS Systems Manager Session Manager instead of SSH for remote access.",
+        "Restrict IAM permissions to access EC2 instance metadata.",
+        "Monitor AWS CloudTrail for unusual API calls related to credential access."
+    ],
+    "T1531": [  # Account Access Removal
+        "Monitor AWS CloudTrail for IAM user and role deletions.",
+        "Use AWS IAM Access Analyzer to detect unexpected permission changes.",
+        "Restrict IAM permissions to modify or delete IAM users and roles."
+    ],
+    "T1072": [  # Software Deployment Tools
+        "Restrict IAM permissions to deploy AWS Lambda functions and EC2 instances.",
+        "Monitor AWS CloudTrail for unauthorized software deployment activities.",
+        "Use AWS Config to enforce security best practices for software deployment."
+    ]
+}
