@@ -1,0 +1,61 @@
+mitre_purview_mapping = {
+    "T1003": ["Enable Microsoft Purview Information Protection to classify and label sensitive credentials", 
+              "Use Microsoft Purview Data Loss Prevention (DLP) to prevent unauthorized credential exfiltration"],
+    
+    "T1027": ["Apply Microsoft Purview sensitivity labels to detect and classify obfuscated or encrypted data",
+              "Monitor file activity with Microsoft Purview Insider Risk Management to detect suspicious obfuscation attempts"],
+    
+    "T1036": ["Use Microsoft Purview Audit to track file renaming and metadata changes",
+              "Implement Microsoft Defender for Cloud Apps to detect anomalous file modifications"],
+    
+    "T1059": ["Monitor script execution with Microsoft Purview Insider Risk Management",
+              "Use Microsoft Defender for Cloud Apps to detect unauthorized script execution in cloud environments"],
+    
+    "T1071": ["Apply Microsoft Purview DLP policies to restrict unauthorized data transmission over command and control channels",
+              "Use Microsoft Defender for Cloud Apps to monitor and block suspicious network traffic"],
+    
+    "T1087": ["Leverage Microsoft Purview Information Protection to classify and restrict access to user account data",
+              "Use Microsoft Purview Audit to track access to sensitive identity-related files"],
+    
+    "T1098": ["Monitor privilege escalation attempts with Microsoft Purview Insider Risk Management",
+              "Use Microsoft Purview DLP to prevent unauthorized modifications to privileged accounts"],
+    
+    "T1110": ["Enable Microsoft Purview sensitivity labels to classify and protect password files",
+              "Use Microsoft Defender for Cloud Apps to detect brute-force authentication attempts"],
+    
+    "T1134": ["Monitor session hijacking attempts with Microsoft Purview Insider Risk Management",
+              "Use Microsoft Purview Audit to track anomalous session activity"],
+    
+    "T1190": ["Apply Microsoft Purview DLP policies to prevent exploitation of vulnerable web applications",
+              "Use Microsoft Defender for Cloud Apps to detect and block suspicious web requests"],
+    
+    "T1210": ["Monitor lateral movement attempts with Microsoft Purview Insider Risk Management",
+              "Use Microsoft Purview Audit to track access to sensitive network shares"],
+    
+    "T1486": ["Use Microsoft Purview sensitivity labels to classify and protect critical files from ransomware encryption",
+              "Enable Microsoft Purview DLP to prevent unauthorized file modifications"],
+    
+    "T1496": ["Monitor resource exhaustion attempts with Microsoft Purview Insider Risk Management",
+              "Use Microsoft Defender for Cloud Apps to detect anomalous cloud resource usage"],
+    
+    "T1518": ["Track system discovery activities with Microsoft Purview Audit",
+              "Use Microsoft Purview Insider Risk Management to detect unauthorized system scans"],
+    
+    "T1530": ["Apply Microsoft Purview DLP policies to prevent unauthorized cloud service discovery",
+              "Use Microsoft Defender for Cloud Apps to monitor cloud service access patterns"],
+    
+    "T1552": ["Use Microsoft Purview sensitivity labels to classify and protect credential storage files",
+              "Enable Microsoft Purview DLP to prevent unauthorized access to stored credentials"],
+    
+    "T1566": ["Monitor phishing attempts with Microsoft Purview Insider Risk Management",
+              "Use Microsoft Defender for Cloud Apps to detect and block phishing-related activities"],
+    
+    "T1573": ["Apply Microsoft Purview DLP policies to prevent unauthorized encrypted communication",
+              "Use Microsoft Defender for Cloud Apps to monitor encrypted traffic anomalies"],
+    
+    "T1583": ["Track infrastructure acquisition activities with Microsoft Purview Audit",
+              "Use Microsoft Purview Insider Risk Management to detect unauthorized infrastructure provisioning"],
+    
+    "T1606": ["Monitor forgeable credential creation with Microsoft Purview Insider Risk Management",
+              "Use Microsoft Purview Audit to track unauthorized certificate generation"]
+}
