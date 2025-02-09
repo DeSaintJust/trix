@@ -1,0 +1,86 @@
+mitre_defensive_requirements = {
+    "T1498": [
+        "Continuous volumetric attack detection with Arbor Sightline",
+        "Automated mitigation with Arbor TMS",
+        "BGP Flowspec-based traffic filtering",
+        "NetFlow-based anomaly detection",
+        "Real-time threat intelligence from ATLAS",
+        "State-exhaustion attack prevention via Arbor AED",
+        "Rate-limiting of attack traffic using Arbor TMS",
+        "Cloud-based volumetric DDoS protection via Arbor Cloud",
+        "Traffic visibility and forensic reporting with Arbor Sightline",
+        "Layer 3/4 attack mitigation with dynamic thresholds"
+    ],
+    "T1665": [
+        "Behavioral anomaly detection with Arbor Sightline",
+        "Early warning via ATLAS Intelligence Feed",
+        "Automated multi-layer mitigation with Arbor AED",
+        "TCP/TLS-based flood protection using Arbor TMS",
+        "Inline traffic scrubbing with Arbor Edge Defense",
+        "Cloud signaling for large-scale attack mitigation",
+        "Granular filtering with packet-based inspection",
+        "Dynamic attack signature creation in Arbor TMS",
+        "Real-time alerts and investigation via Arbor UI",
+        "Automated rate-limiting on suspicious traffic"
+    ],
+    "T1498.001": [
+        "Surgical volumetric attack filtering using Arbor TMS",
+        "Traffic-based anomaly modeling in Arbor Sightline",
+        "Cloud Signaling to Arbor Cloud for upstream mitigation",
+        "Real-time attack monitoring with Arbor Dashboard",
+        "Layered DDoS protection strategy implementation",
+        "Stateful attack tracking and response",
+        "Border Gateway Protocol (BGP) blackholing capabilities",
+        "Mitigation template configuration for fast response",
+        "GeoIP-based malicious source blocking",
+        "Automated packet filtering and drop policies"
+    ],
+    "T1498.002": [
+        "Detection of UDP reflection/amplification attacks",
+        "Rate-limiting abnormally high inbound traffic flows",
+        "Protocol anomaly detection and filtering",
+        "Dynamic IP reputation-based blocking",
+        "Traffic diversion and reinjection to Arbor TMS",
+        "ATLAS Intelligence Feed-driven protection updates",
+        "Granular traffic shaping for DNS/NTP/SSDP vectors",
+        "Packet-level inspection for reflective attack signatures",
+        "Correlated detection and mitigation workflow in Arbor UI",
+        "Flagging and blocking botnet-originated traffic"
+    ],
+    "T1499.002": [
+        "Automated volumetric web attack response",
+        "Detection of HTTP-based flood patterns",
+        "Rate-based filtering on high request-per-second sources",
+        "Mitigation of concurrent connection exhaustion",
+        "ATLAS-derived signatures for web attack patterns",
+        "SSL/TLS traffic decryption for inspection",
+        "Application-layer rate limiting for HTTP/S traffic",
+        "Threshold-based automated response for L7 floods",
+        "Geo-blocking of suspicious IP ranges",
+        "Traffic signature-based blocking for botnet attacks"
+    ],
+    "T1499.003": [
+        "Traffic heuristics-based detection of application-layer attacks",
+        "Dynamically adjusting rate limits based on observed traffic",
+        "Inline Arbor AED filtering of excessive DNS queries",
+        "Protocol-aware DNS request monitoring",
+        "Suspicious DNS server behavior detection",
+        "Real-time logging of anomalous DNS query surges",
+        "ATLAS Intelligence Feed integration for attack trends",
+        "BGP FlowSpec mitigation for DNS query floods",
+        "Stateful filtering for recursive DNS attack flows",
+        "Automated DNS response rate limiting"
+    ],
+    "T1499.004": [
+        "Mitigation of TLS session-based resource exhaustion attacks",
+        "Real-time HTTPS traffic rate assessment",
+        "Detection of TLS renegotiation-based flood attempts",
+        "SSL decryption using Arbor AED for deep packet inspection",
+        "ATLAS Intelligence Feed integration for HTTPS attack trends",
+        "Cloud-based TLS DDoS mitigation with Arbor Cloud",
+        "BGP-triggered filters based on SSL handshake anomalies",
+        "Automated mitigation of resource depletion vectors",
+        "Traffic shaping policies for TLS-heavy transactions",
+        "Stateful tracking of legitimate vs. malicious TLS connections"
+    ]
+}
