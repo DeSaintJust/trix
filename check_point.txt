@@ -100,3 +100,16 @@ mitre_checkpoint_mapping = {
         "Deploy Check Point Anti-Bot to detect malware leveraging execution hijacking."
     ]
 }
+
+mitre_attack_mapping = {
+    "T1071": "C2 communication via HTTP (e.g., Check Point Anti-Bot detection bypass)",
+    "T1133": "Exploitation of remote services (e.g., unauthorized access via VPN or SSH)",
+    "T1021": "Remote services abuse (e.g., rlogin, rshell, rexec misconfigurations)",
+    "T1134": "Privilege escalation via misconfigured authentication policies (e.g., fw1userPwdPolicy)",
+    "T1557": "Man-in-the-Middle attacks on VPN tunnels (e.g., fw1ISAKMP-EncMethod weaknesses)",
+    "T1078": "Use of compromised credentials (e.g., fw1badPwdCount, fw1lastLoginFailure)",
+    "T1566": "Phishing for administrator credentials (e.g., social engineering targeting Check Point admins)",
+    "T1203": "Exploitation of client-side vulnerabilities (e.g., Check Point SmartConsole flaws)",
+    "T1046": "Network service scanning (e.g., enumeration of Check Point firewall services)",
+    "T1135": "Access to network shares (e.g., unauthorized access to Check Point management server files)"
+}
